@@ -1,0 +1,119 @@
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(./fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    max-width: 430px;
+    height: 932px;
+    overflow: hidden;
+    margin:  100px;
+    gap: 24px;
+    padding: 80px 24px 24px 24px;
+}
+
+.inputs{
+    height: 284px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.inputs > input{
+    width: 100%; 
+    border: none;
+    color: white;
+    text-align: right;
+}
+
+h5{
+    margin: 0;
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: white;
+    font-family: PlusJakartaSans;
+}
+ 
+#userSelect{
+    font-size: 20px;
+    font-family: PlusJakartaSans;
+    background-color: transparent;
+}
+
+#display{
+    font-family: PlusJakartaSans;
+    font-size: 120px;
+    line-height: 151px;
+    background: transparent;
+    outline: none;
+}
+
+.key-btns{
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    padding: 25px;
+}
+
+.oprtrs{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.oprtrs .operator-btn:first-of-type, .equal{  
+    width: 75%;
+}
+
+button{
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn, .equal{
+    color: #0A0A0A;
+
+    background-color: #FF9800;
+}
+
+.operator-btn:hover{
+    background-color: hsl(36, 100%, 65%);
+}
+
+.operator-btn:active{
+    background-color: hsl(36, 100%, 75%);
+}
+
